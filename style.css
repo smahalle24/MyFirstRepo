@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,600i,700,700i,800,800i');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+a{
+    color: green;
+    text-decoration: none;
+}
+
+.btn {
+	padding: 5px 20px;
+	border-radius: 0;
+	background: transparent;
+    border: 1px solid green;
+    background:green;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.full-row{
+    width: 100%;
+    display: flex;  
+    flex-flow: row wrap;
+}
+
+.checkout-row {
+	padding: 20px 0;
+}
+
+.checkout-right .btn{
+    float: right;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.checkout-left,.checkout-right{
+    float: left;
+    width: 50%;
+}
+
+.pr-product{
+    float: left;
+    width: 35%;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.pr-delivery-opt{
+    float: left;
+    width: 15%;
+}
+
+.pr-qty{
+    float: left;
+    width: 20%;
+}
+
+.pr-price{
+    float: left;
+    width: 15%;
+}
+
+.old-val{
+    text-decoration:line-through;
+}
+
+.new-val{    
+    margin-left: 15px;
+}
+
+.ths-red{
+    color: red;
+}
+
+.prd-value-details .pr-total{
+    font-weight: 600;
+}
+
+.pr-total{
+    float: left;
+    width: 15%;
+    text-align: right;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.pr-image{
+    float: left;
+    width: 40%;
+}
+
+.pr-title{
+    float: left;
+    width: 60%;
+}
+
+.pr-title h4{
+    font-size: 18px;
+    font-style: italic;
+    color: green;
+    margin-top:0;
+    margin-bottom: 15px;
+}
+
+.pr-image img{
+    width:150px;
+    height: 150px;
+}
+
+.pr-qty-input{
+    float: left;
+    width: 20%;
+}
+
+.pr-in-stock{
+    float: left;
+    width: 80%;
+}
+
+.pr-in-stock span{
+    font-weight: 600;
+}
+
+.pr-in-stock a{
+    font-size: 13px;
+}
+
+.prd-value-details{
+    border-bottom: 1px solid #ccc;
+}
+
+.prd-title-details{
+    background:#ccc;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    align-items: center;
+}
+
+.prd-value-details{
+    padding: 10px 0;
+}
+
+.prd-qty {
+	width: 30px;
+	height: 30px;
+	border: 1px solid #444;
+	padding: 5px;
+}
+
+.cart-details{
+    padding: 20px 0;
+}
+
+.cpn{
+    border: 1px solid #444;
+    width: 250px;
+    padding: 5px;
+}
+
+.update-cart{
+    border: 1px solid green;
+    color: green;
+    background:transparent;
+}
+
+.coupn-code {
+	width: 60%;
+}
+
+.pr-details{
+    width: 40%;
+}
+
+.pr-subtotal th,.pr-subtotal td{
+    width: 150px;
+    text-align: right;
+    font-weight: normal;
+    padding: 3px;
+}
+
+.cart-subtotal th,.cart-subtotal td{
+    font-weight: 600;
+}
+
+.subtotal-tbl{
+    float:right;
+}
+
+.order-total th,.order-total td{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1200px){
+    .pr-image img{
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .pr-image img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        font-size: 13px;
+    }
+    .hide-for-mb{
+        display: none;
+    }
+    .pr-product {
+        width: 100%;
+        order: 1;
+        margin-bottom: 20px;
+    }
+    .pr-qty{
+        width: 60%;
+        order: 2;
+    }
+    .pr-price{
+        width: 40%;
+        order: 3;
+    }
+    .pr-delivery-opt{
+        width: 50%;
+        order: 4;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .pr-total{
+        width: 50%;
+        order: 5;
+        margin-top: 20px;
+    }
+    .pr-image img {
+        width: 100px;
+        height: 100px;
+    }
+    .pr-qty-input{
+        width:50%;
+        order: 2;
+        text-align: center;
+    }
+    .pr-in-stock{
+        width: 50%;
+        order: 1;
+        text-align: center;
+    }
+    .pr-qty{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .coupn-code,.pr-details{
+        width: 100%;
+    }
+    .coupn-code{
+        order: 2;
+        margin-top: 20px;
+    }
+    .pr-details{
+        order: 1;
+    }
+    .cpn{
+        width: 125px;
+    }
+    .btn{
+        padding: 5px 10px;
+    }
+    .order-total th, .order-total td {
+        font-size: 16px;
+    }
+}
